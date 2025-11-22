@@ -8,10 +8,6 @@ A Chrome Extension (Manifest V3) for tracking assignment deadlines from the Univ
 
 ✅ **Automatic Session Detection** - Uses script injection to retrieve your Moodle session key  
 ✅ **Offline-First Architecture** - Stale-While-Revalidate caching strategy  
-✅ **Smart Color Coding**:
-  - Red: Due in less than 24 hours
-  - Yellow: Due in less than 3 days
-  - Green: More than 3 days remaining
 ✅ **Google Calendar Integration** - One-click export to Google Calendar  
 ✅ **Modern Dark Mode UI** - Sleek, minimal design  
 ✅ **Direct Assignment Links** - Click any deadline to open it in Moodle
