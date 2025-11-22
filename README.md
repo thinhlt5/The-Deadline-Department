@@ -86,8 +86,8 @@ This extension:
 
 ## Troubleshooting
 
-### "Please Login to Moodle" appears when logged in
-- Refresh the Moodle page and try again
+### "Please Login to UTH Courses" appears when logged in
+- Refresh the Courses page and try again
 - Clear browser cache for courses.ut.edu.vn
 - Check if you're on the correct domain
 
