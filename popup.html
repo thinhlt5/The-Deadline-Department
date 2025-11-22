@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTH Deadline Hunter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1>The Deadline Department</h1>
+      <button id="refreshBtn" class="refresh-btn" title="Refresh deadlines">
+        <i class="fas fa-sync-alt"></i>
+      </button>
+    </header>
+
+    <!-- Status Banner -->
+    <div id="statusBanner" class="status-banner hidden"></div>
+
+    <!-- Loading State -->
+    <div id="loadingState" class="loading-state hidden">
+      <div class="spinner"></div>
+      <p>Loading deadlines...</p>
+    </div>
+
+    <!-- Login Prompt -->
+    <div id="loginPrompt" class="login-prompt hidden">
+      <i class="fas fa-sign-in-alt" style="font-size: 64px;"></i>
+      <h2>Please Login to UTH Courses</h2>
+      <p id="loginMessage">You need to be logged in to courses.ut.edu.vn<br>to view your deadlines.</p>
+      <div style="display: flex; gap: 10px; margin-top: 16px;">
+        <button id="loginBtn" class="login-btn">Open Courses Login</button>
+        <button id="retryBtn" class="login-btn" style="background: var(--bg-secondary); border: 1px solid var(--border-color);">Retry</button>
+      </div>
+    </div>
+
+    <!-- Deadlines List -->
+    <div id="deadlinesList" class="deadlines-list hidden"></div>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="empty-state hidden">
+      <i class="fas fa-check-circle" style="font-size: 64px;"></i>
+      <h2>No Upcoming Deadlines</h2>
+      <p>You're all caught up!</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span id="lastUpdated"></span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+

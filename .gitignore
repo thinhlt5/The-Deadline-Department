@@ -1,0 +1,23 @@
+# Chrome Extension
+*.crx
+*.pem
+
+# Icons (generated)
+icon*.png
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
